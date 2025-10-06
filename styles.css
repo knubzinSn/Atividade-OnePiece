@@ -1,0 +1,129 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(255, 47, 47), rgb(255, 255, 82) 100%);
+}
+
+
+main {
+    width: 1200px;
+    height: 600px;
+    background: linear-gradient(90deg, #ff0000 0%, #00a86b 40%, #ffd700 80%);
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#luffy {
+    width: 350px;
+    height: 550px;
+    background: linear-gradient(135deg, hsl(0, 100%, 76%) 0%, #820000 100%);
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border: 5px double rgb(79, 0, 0);
+    border-radius: 15px;
+}
+
+#luffy img {
+    width: 350px;
+    height: 305px;
+    border-radius: 10px;
+
+}
+
+.luffy {
+    color: rgb(120, 0, 0);
+}
+
+#zoro {
+    width: 350px;
+    height: 550px;
+    background: linear-gradient(135deg, #82feba 0%, #003300 100%);
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border: 5px double rgb(0, 68, 14);
+    border-radius: 15px;
+}
+
+#zoro img {
+    width: 350px;
+    height: 305px;
+    border-radius: 10px;
+}
+
+.zoro {
+    color: rgb(0, 102, 0);
+}
+
+#sanji {
+    width: 350px;
+    height: 550px;
+    background: linear-gradient(135deg, #fbe97f 0%, #695900 100%);
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    border: 5px double rgb(62, 62, 0);
+    border-radius: 15px;
+}
+
+#sanji img {
+    width: 350px;
+    height: 305px;
+    border-radius: 10px;
+}
+
+.sanji {
+    color: rgb(104, 104, 0);
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+    .luffy,
+    .zoro,
+    .sanji {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+}
