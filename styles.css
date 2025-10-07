@@ -1,129 +1,106 @@
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background: linear-gradient(90deg, rgb(255, 47, 47), rgb(255, 255, 82) 100%);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-
 main {
-    width: 1200px;
-    height: 600px;
+    width: 90%;
+    max-width: 1200px;
     background: linear-gradient(90deg, #ff0000 0%, #00a86b 40%, #ffd700 80%);
     border-radius: 15px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-
-#luffy {
+/* Seções dos personagens */
+#luffy, #zoro, #sanji {
     width: 350px;
-    height: 550px;
-    background: linear-gradient(135deg, hsl(0, 100%, 76%) 0%, #820000 100%);
-    float: left;
-    margin: 10px;
-    padding: 10px;
-    border: 5px double rgb(79, 0, 0);
+    height: auto;
+    background: linear-gradient(135deg, #ff9b9b 0%, #820000 100%);
     border-radius: 15px;
-}
-
-#luffy img {
-    width: 350px;
-    height: 305px;
-    border-radius: 10px;
-
-}
-
-.luffy {
-    color: rgb(120, 0, 0);
+    border: 5px double #4f0000;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
 
 #zoro {
-    width: 350px;
-    height: 550px;
     background: linear-gradient(135deg, #82feba 0%, #003300 100%);
-    float: left;
-    margin: 10px;
-    padding: 10px;
     border: 5px double rgb(0, 68, 14);
-    border-radius: 15px;
-}
-
-#zoro img {
-    width: 350px;
-    height: 305px;
-    border-radius: 10px;
-}
-
-.zoro {
-    color: rgb(0, 102, 0);
 }
 
 #sanji {
-    width: 350px;
-    height: 550px;
     background: linear-gradient(135deg, #fbe97f 0%, #695900 100%);
-    float: right;
-    margin: 10px;
-    padding: 10px;
     border: 5px double rgb(62, 62, 0);
-    border-radius: 15px;
 }
 
-#sanji img {
-    width: 350px;
-    height: 305px;
+#luffy img, #zoro img, #sanji img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
-.sanji {
-    color: rgb(104, 104, 0);
-}
-
 p {
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
-    font-family: sans-serif;
 }
 
 .btn {
     width: 150px;
-    height: 30px;
-    text-align: center;
+    height: 35px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
-    margin-top: 25px;
+    margin: 15px auto 0;
+    background-color: white;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(240, 240, 240);
 }
 
 a {
-    color: rgb(0, 0, 0);
-    line-height: 30px;
+    color: black;
     text-decoration: none;
+    line-height: 35px;
+    display: block;
 }
 
 h1 {
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-
+    margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
     main {
-        width: 100%;
-        height: auto;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
     }
 
-    .luffy,
-    .zoro,
-    .sanji {
+    #luffy, #zoro, #sanji {
         width: 100%;
-        height: auto;
+        max-width: 400px;
     }
 
     .btn {
-        margin-bottom: 20px;
+        width: 60%;
+        max-width: 200px;
     }
-
 }
